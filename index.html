@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="x-ua-compatible" content="ie=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="" />
+
+   <!-- Site Title -->
+   <title>Hrithik Saini - Web designer | Frontend Developer</title>
+
+   <!-- Place favicon.ico in the root directory -->
+   <link rel="apple-touch-icon" href="./assets/img/hrithik-favicon.svg" />
+   <link rel="shortcut icon" type="image/png" href="./assets/img/hrithik-favicon.svg" />
+
+   <!-- CSS here -->
+   <link rel="stylesheet" href="assets/css/animate.min.css" />
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="assets/css/font-awesome-pro.min.css" />
+   <link rel="stylesheet" href="assets/css/flaticon_gerold.css" />
+   <link rel="stylesheet" href="assets/css/nice-select.css" />
+   <link rel="stylesheet" href="assets/css/backToTop.css" />
+   <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+   <link rel="stylesheet" href="assets/css/swiper.min.css" />
+   <link rel="stylesheet" href="assets/css/odometer-theme-default.css" />
+   <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+   <link rel="stylesheet" href="assets/css/main.css" />
+   <link rel="stylesheet" href="assets/css/main-2.css" />
+   <link rel="stylesheet" href="assets/css/main-3.css" />
+   <link rel="stylesheet" href="assets/css/light-mode.css" />
+   <link rel="stylesheet" href="assets/css/meanmenu.css" />
+   <link rel="stylesheet" href="assets/css/responsive.css" />
+   <link rel="stylesheet" href="assets/css/responsive-2.css" />
+   <link rel="stylesheet" href="assets/css/responsive-3.css" />
+</head>
+
+<body>
+    <style>
+        /* Black overlay background */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 9998;
+        }
+
+        /* Styled popup box */
+        .popup-alert {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #ff4d4d; /* Bright red */
+            color: white;
+            padding: 20px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            width: 350px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        /* Animation for fade-in effect */
+        .show {
+            display: block;
+            opacity: 1;
+        }
+    </style>
+   <!-- Preloader Area Start -->
+   <div class="preloader">
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+         <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+      </svg>
+
+      <div class="preloader-heading">
+         <div class="load-text">
+            <span>L</span>
+            <span>O</span>
+            <span>A</span>
+            <span>D</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+         </div>
+      </div>
+   </div>
+   <!-- Preloader Area End -->
+
+   <!-- start: Back To Top -->
+   <div class="progress-wrap" id="scrollUp">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+   </div>
+   <!-- end: Back To Top -->
+
+   <!-- HEADER START -->
+   <header class="tj-header-area header-absolute">
+      <div class="container">
+         <div class="row">
+            <div class="col-12 d-flex flex-wrap align-items-center">
+               <div class="logo-box">
+                  <a href="index.html">
+                     <img src="assets/img/logo/hrithik-logo.svg" alt="" />
+                  </a>
+               </div>
+
+               <div class="header-info-list d-none d-md-inline-block">
+                  <ul class="ul-reset">
+                     <li><a href="mailto:hrsaini396@gmail.com">hrsaini396@gmail.com</a></li>
+                  </ul>
+               </div>
+               <div class="header-menu" id="headerMenu">
+                  <nav>
+                     <ul>
+                        <li class="current-menu-ancestor">
+                           <a class="current-menu-item" href="#">Home</a>
+                           <!-- <ul class="sub-menu">
+                              <li class="has-dropdown current-menu-ancestor">
+                                 <a href="index.html">Dark Mode</a>
+                                 <ul class="sub-menu">
+                                    <li class="current-menu-item">
+                                       <a href="index.html">Home One</a>
+                                    </li>
+                                    <li>
+                                       <a href="index-2.html">Home Two</a>
+                                    </li>
+                                    <li>
+                                       <a href="index-3.html">Home Three</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="has-dropdown">
+                                 <a href="index-light.html">Light Mode</a>
+                                 <ul class="sub-menu">
+                                    <li>
+                                       <a href="index-light.html">Home One</a>
+                                    </li>
+                                    <li>
+                                       <a href="index-2-light.html">Home Two</a>
+                                    </li>
+                                    <li>
+                                       <a href="index-3-light.html">Home Three</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul> -->
+                        </li>
+                        <li><a href="#">About</a></li>
+                        <!-- <li><a href="services.html">Services</a></li> -->
+                        <li><a href="#">My Projects</a></li>
+                        <!-- <li class="has-dropdown">
+                           <a href="blog.html">Blog</a>
+                           <ul class="sub-menu">
+                              <li>
+                                 <a href="blog.html">Blog</a>
+                              </li>
+                              <li>
+                                 <a href="blog-details.html">Blog Details</a>
+                              </li>
+                           </ul>
+                        </li> -->
+                        <!-- <li><a href="contact.html">Contact</a></li> -->
+                     </ul>
+                  </nav>
+               </div>
+               <div class="mobile-menu d-lg-none"></div>
+               <div class="header-button">
+                  <a href="#" class="btn tj-btn-primary">Hire me!</a>
+               </div>
+               <div class="menu-bar d-lg-none">
+                  <button>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <header class="tj-header-area header-2 header-sticky sticky-out">
+      <div class="container">
+         <div class="row">
+            <div class="col-12 d-flex flex-wrap align-items-center">
+               <div class="logo-box">
+                  <a href="index.html">
+                     <img src="assets/img/logo/hrithik-logo.svg" alt="" />
+                  </a>
+               </div>
+               <div class="header-info-list d-none d-md-inline-block">
+                  <ul class="ul-reset">
+                     <li><a href="mailto:hrsaini396@gmail.com">hrsaini396@gmail.com</a></li>
+                  </ul>
+               </div>
+               <div class="header-menu">
+                  <nav>
+                     <ul>
+                        <li class="current-menu-ancestor">
+                           <a class="current-menu-item" href="#">Home</a>
+                           <!-- <ul class="sub-menu">
+                              <li class="has-dropdown current-menu-ancestor">
+                                 <a href="index.html">Dark Mode</a>
+                                 <ul class="sub-menu">
+                                    <li class="current-menu-item">
+                                       <a href="index.html">Home One</a>
+                                    </li>
+                                    <li>
+                                       <a href="index-2.html">Home Two</a>
+                                    </li>
+                                    <li>
+                                       <a href="index-3.html">Home Three</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="has-dropdown">
+                                 <a href="index-light.html">Light Mode</a>
+                                 <ul class="sub-menu">
+                                    <li>
+                                       <a href="index-light.html">Home One</a>
+                                    </li>
+                                    <li>
+                                       <a href="index-2-light.html">Home Two</a>
+                                    </li>
+                                    <li>
+                                       <a href="index-3-light.html">Home Three</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul> -->
+                        </li>
+                        <li><a href="#">About</a></li>
+                        <!-- <li><a href="services.html">Services</a></li> -->
+                        <li><a href="#">My Projects</a></li>
+                        <!-- <li class="has-dropdown">
+                           <a href="blog.html">Blog</a>
+                           <ul class="sub-menu">
+                              <li>
+                                 <a href="blog.html">Blog</a>
+                              </li>
+                              <li>
+                                 <a href="blog-details.html">Blog Details</a>
+                              </li>
+                           </ul>
+                        </li> -->
+                        <!-- <li><a href="contact.html">Contact</a></li> -->
+                     </ul>
+                  </nav>
+               </div>
+               <div class="mobile-menu d-lg-none"></div>
+               <div class="header-button">
+                  <a href="#" class="btn tj-btn-primary">Hire me!</a>
+               </div>
+               <div class="menu-bar d-lg-none">
+                  <button>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- HEADER END -->
+
+   <main class="site-content" id="content">
+      <!-- HERO SECTION START -->
+      <section class="hero-section d-flex align-items-center" id="intro">
+         <div class="intro_text">
+            <svg viewBox="0 0 1320 300">
+               <text x="50%" Y="80%" text-anchor="middle">HI</text>
+            </svg>
+         </div>
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-6">
+                  <div class="hero-content-box">
+                     <span class="hero-sub-title">I am Hrithik Saini</span>
+                     <h1 class="hero-title">Web Designer +<br />Frontend Developer</h1>
+
+                     <div class="hero-image-box d-md-none text-center">
+                        <img src="assets/img/hero/profile-1-img.png" alt="" />
+                     </div>
+
+                     <p class="lead">
+                        Hi, I'm Hrithik Saini. I transform concepts into seamless user experiences with modern web design and frontend development skills.
+                     </p>
+                     <div class="button-box d-flex flex-wrap align-items-center">
+                        <a href="#" class="btn tj-btn-secondary">Download CV <i class="flaticon-download"></i></a>
+                        <ul class="ul-reset social-icons">
+                           <!-- <li>
+                              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                           </li>
+                           <li>
+                              <a href="#"><i class="fa-light fa-basketball"></i></a>
+                           </li> -->
+                           <li>
+                              <a href="https://www.linkedin.com/in/hrithik-saini-b1b2b320a/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                           </li>
+                           <li>
+                              <a href="https://github.com/Hrithiksaini2000" target="_blank"><i class="fa-brands fa-github"></i></a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 d-none d-md-block">
+                  <div class="hero-image-box text-center">
+                     <img src="assets/img/hero/profile-img-2.png" alt="" />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- HERO SECTION END -->
+             <!-- start: Roll Area -->
+      <section class="tj-roll-section sc-pt-55 sc-pb-55">
+         <div class="slide-roll">
+            <div class="roll-box roll-box-revers">
+               <div class="roll-item">
+                  <div class="roll-icon">
+                     <img class="portal-icon" src="assets/img/icons/star.svg" alt="Icon" />
+                  </div>
+                  <div class="roll-title">
+                     <h5 class="title">Visual Design</h5>
+                  </div>
+               </div>
+               <div class="roll-item">
+                  <div class="roll-icon">
+                     <img class="portal-icon" src="assets/img/icons/star.svg" alt="Icon" />
+                  </div>
+                  <div class="roll-title">
+                     <h5 class="title">Responsive Layouts</h5>
+                  </div>
+               </div>
+               <div class="roll-item">
+                  <div class="roll-icon">
+                     <img class="portal-icon" src="assets/img/icons/star.svg" alt="Icon" />
+                  </div>
+                  <div class="roll-title">
+                     <h5 class="title">UI Development</h5>
+                  </div>
+               </div>
+               <div class="roll-item">
+                  <div class="roll-icon">
+                     <img class="portal-icon" src="assets/img/icons/star.svg" alt="Icon" />
+                  </div>
+                  <div class="roll-title">
+                     <h5 class="title">Typography & Colors</h5>
+                  </div>
+               </div>
+               <div class="roll-item">
+                  <div class="roll-icon">
+                     <img class="portal-icon" src="assets/img/icons/star.svg" alt="Icon" />
+                  </div>
+                  <div class="roll-title">
+                     <h5 class="title">Performance Optimization</h5>
+                  </div>
+               </div>
+               <div class="roll-item">
+                  <div class="roll-icon">
+                     <img class="portal-icon" src="assets/img/icons/star.svg" alt="Icon" />
+                  </div>
+                  <div class="roll-title">
+                     <h5 class="title">User Experience</h5>
+                  </div>
+               </div>
+               <div class="roll-item">
+                  <div class="roll-icon">
+                     <img class="portal-icon" src="assets/img/icons/star.svg" alt="Icon" />
+                  </div>
+                  <div class="roll-title">
+                     <h5 class="title">Version Control</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="roll-box roll-box-revers">
+               <div class="roll-item">
+                  <div class="roll-icon">
+                     <img class="portal-icon" src="assets/img/icons/star.svg" alt="Icon" />
+                  </div>
+                  <div class="roll-title">
+                     <h5 class="title">Visual Design</h5>
+                  </div>
+               </div>
+               <div class="roll-item">
+                  <div class="roll-icon">
+                     <img class="portal-icon" src="assets/img/icons/star.svg" alt="Icon" />
+                  </div>
+                  <div class="roll-title">
+                     <h5 class="title">Responsive Layouts</h5>
+                  </div>
+               </div>
+               <div class="roll-item">
+                  <div class="roll-icon">
+                     <img class="portal-icon" src="assets/img/icons/star.svg" alt="Icon" />
+                  </div>
+                  <div class="roll-title">
+                     <h5 class="title">UI Development</h5>
+                  </div>
+               </div>
+               <div class="roll-item">
+                  <div class="roll-icon">
+                     <img class="portal-icon" src="assets/img/icons/star.svg" alt="Icon" />
+                  </div>
+                  <div class="roll-title">
+                     <h5 class="title">Typography & Colors</h5>
+                  </div>
+               </div>
+               <div class="roll-item">
+                  <div class="roll-icon">
+                     <img class="portal-icon" src="assets/img/icons/star.svg" alt="Icon" />
+                  </div>
+                  <div class="roll-title">
+                     <h5 class="title">Performance Optimization</h5>
+                  </div>
+               </div>
+               <div class="roll-item">
+                  <div class="roll-icon">
+                     <img class="portal-icon" src="assets/img/icons/star.svg" alt="Icon" />
+                  </div>
+                  <div class="roll-title">
+                     <h5 class="title">User Experience</h5>
+                  </div>
+               </div>
+               <div class="roll-item">
+                  <div class="roll-icon">
+                     <img class="portal-icon" src="assets/img/icons/star.svg" alt="Icon" />
+                  </div>
+                  <div class="roll-title">
+                     <h5 class="title">Version Control</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end: Roll Area -->
+
+      <section class="project-section style-2">
+         <div class="container-fluid">
+            <div class="row justify-content-center">
+               <div class="col-md-12 heading-margin">
+                  <div class="section-header text-center">
+                     <h2 class="section-title wow fadeInUp" data-wow-delay=".3s">My Recent Works</h2>
+                     <p class="wow fadeInUp" data-wow-delay=".4s">Recent Projects</p>
+                  </div>
+               </div>
+               <div class="col-lg-5">
+                  <div class="project-content-area featured style-2">
+                     <div class="project-box">
+                        <div class="project-wrapper">
+                           <img src="assets/img/portfolio/project-1-new.png" alt="Images" />
+                        </div>
+                        <div class="project-left-content">
+                           <div class="project_content">
+                              <h3 class="title"><button data-mfp-src="#portfolio-wrapper"
+                                    class="modal-popup">India Bolts</button>
+                              </h3>
+                              <!-- <p class="desc">
+                                 The India Bolts project focused on precision and reliability in the fastener industry.They have extensive range of high-quality bolts, nuts, and fasteners, ensuring seamless navigation and clear product information.
+                              </p> -->
+                              <span class="subtitle">Technologies Used:</span>
+                           </div>
+                           <ul class="project_tags">
+                              <li><a href="#"><img src="assets/img/logo/html-new.png" alt="" class="technlogo-logo">HTML</a></li>
+                              <li><a href="#"><img src="assets/img/logo/css-new.png" alt="" class="technlogo-logo">CSS</a></li>
+                              <li><a href="#"><img src="assets/img/logo/js-logo-2.png" alt="" class="technlogo-logo">JAVASCRIPT</a></li>
+                              <li><a href="#"><img src="assets/img/logo/jquery-svgrepo-com.svg" alt="" class="technlogo-logo">JQUERY</a></li>
+                              <li><a href="#"><img src="assets/img/logo/bootstrap-5-logo-icon.svg" alt="" class="technlogo-logo">BOOTSTRAP</a></li>
+                           </ul>
+                           <div class="project-button">
+                              <a href="https://indiabolts.in/">
+                              <button class="project-btn" data-mfp-src="#portfolio-wrapper">
+                                 View
+                                 Live Project
+                                 <span class="icon_box">
+                                    <i class="icon_first fa-light fa-arrow-right"></i>
+                                    <i class="icon_second fa-light fa-arrow-right"></i>
+                                 </span>
+                              </button>
+                           </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-5">
+                  <div class="project-content-area featured style-2">
+                     <div class="project-box">
+                        <div class="project-wrapper">
+                           <img src="assets/img/portfolio/project-4.png" alt="Images" />
+                        </div>
+                        <div class="project-left-content">
+                           <div class="project_content">
+                              <h3 class="title"><button data-mfp-src="#portfolio-wrapper"
+                                    class="modal-popup">FWIIC</button>
+                              </h3>
+                              <!-- <p class="desc">
+                                 The India Bolts project focused on precision and reliability in the fastener industry.They have extensive range of high-quality bolts, nuts, and fasteners, ensuring seamless navigation and clear product information.
+                              </p> -->
+                              <span class="subtitle">Technologies Used:</span>
+                           </div>
+                           <ul class="project_tags">
+                              <li><a href="#"><img src="assets/img/logo/html-new.png" alt="" class="technlogo-logo">HTML</a></li>
+                              <li><a href="#"><img src="assets/img/logo/css-new.png" alt="" class="technlogo-logo">CSS</a></li>
+                              <li><a href="#"><img src="assets/img/logo/js-logo-2.png" alt="" class="technlogo-logo">JAVASCRIPT</a></li>
+                              <li><a href="#"><img src="assets/img/logo/jquery-svgrepo-com.svg" alt="" class="technlogo-logo">JQUERY</a></li>
+                              <li><a href="#"><img src="assets/img/logo/bootstrap-5-logo-icon.svg" alt="" class="technlogo-logo">BOOTSTRAP</a></li>
+                           </ul>
+                           <div class="project-button">
+                              <a href="https://www.fwiic.com/">
+                              <button class="project-btn" data-mfp-src="#portfolio-wrapper">
+                                 View
+                                 Live Project
+                                 <span class="icon_box">
+                                    <i class="icon_first fa-light fa-arrow-right"></i>
+                                    <i class="icon_second fa-light fa-arrow-right"></i>
+                                 </span>
+                              </button>
+                           </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-5">
+                  <div class="project-content-area featured style-2">
+                     <div class="project-box">
+                        <div class="project-wrapper">
+                           <img src="assets/img/portfolio/project-3.png" alt="Images" />
+                        </div>
+                        <div class="project-left-content">
+                           <div class="project_content">
+                              <h3 class="title"><button data-mfp-src="#portfolio-wrapper"
+                                    class="modal-popup">Virat Plywood</button>
+                              </h3>
+                              <!-- <p class="desc">
+                                 The India Bolts project focused on precision and reliability in the fastener industry.They have extensive range of high-quality bolts, nuts, and fasteners, ensuring seamless navigation and clear product information.
+                              </p> -->
+                              <span class="subtitle">Technologies Used:</span>
+                           </div>
+                           <ul class="project_tags">
+                              <li><a href="#"><img src="assets/img/logo/html-new.png" alt="" class="technlogo-logo">HTML</a></li>
+                              <li><a href="#"><img src="assets/img/logo/css-new.png" alt="" class="technlogo-logo">CSS</a></li>
+                              <li><a href="#"><img src="assets/img/logo/js-logo-2.png" alt="" class="technlogo-logo">JAVASCRIPT</a></li>
+                              <li><a href="#"><img src="assets/img/logo/jquery-svgrepo-com.svg" alt="" class="technlogo-logo">JQUERY</a></li>
+                              <li><a href="#"><img src="assets/img/logo/bootstrap-5-logo-icon.svg" alt="" class="technlogo-logo">BOOTSTRAP</a></li>
+                           </ul>
+                           <div class="project-button">
+                              <a href="https://viratply.com/">
+                              <button class="project-btn" data-mfp-src="#portfolio-wrapper">
+                                 View
+                                 Live Project
+                                 <span class="icon_box">
+                                    <i class="icon_first fa-light fa-arrow-right"></i>
+                                    <i class="icon_second fa-light fa-arrow-right"></i>
+                                 </span>
+                              </button>
+                           </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-5">
+                  <div class="project-content-area featured style-2">
+                     <div class="project-box">
+                        <div class="project-wrapper">
+                           <img src="assets/img/portfolio/project-5.png" alt="Images" />
+                        </div>
+                        <div class="project-left-content">
+                           <div class="project_content">
+                              <h3 class="title"><button data-mfp-src="#portfolio-wrapper"
+                                    class="modal-popup">Airport Limo Link</button>
+                              </h3>
+                              <!-- <p class="desc">
+                                 The India Bolts project focused on precision and reliability in the fastener industry.They have extensive range of high-quality bolts, nuts, and fasteners, ensuring seamless navigation and clear product information.
+                              </p> -->
+                              <span class="subtitle">Technologies Used:</span>
+                           </div>
+                           <ul class="project_tags">
+                              <li><a href="#"><img src="assets/img/logo/html-new.png" alt="" class="technlogo-logo">HTML</a></li>
+                              <li><a href="#"><img src="assets/img/logo/css-new.png" alt="" class="technlogo-logo">CSS</a></li>
+                              <li><a href="#"><img src="assets/img/logo/js-logo-2.png" alt="" class="technlogo-logo">JAVASCRIPT</a></li>
+                              <li><a href="#"><img src="assets/img/logo/jquery-svgrepo-com.svg" alt="" class="technlogo-logo">JQUERY</a></li>
+                              <li><a href="#"><img src="assets/img/logo/bootstrap-5-logo-icon.svg" alt="" class="technlogo-logo">BOOTSTRAP</a></li>
+                           </ul>
+                           <div class="project-button">
+                              <a href="https://demo6.cyberframe.in/airport-limo-link-new/">
+                              <button class="project-btn" data-mfp-src="#portfolio-wrapper">
+                                 View
+                                 Live Project
+                                 <span class="icon_box">
+                                    <i class="icon_first fa-light fa-arrow-right"></i>
+                                    <i class="icon_second fa-light fa-arrow-right"></i>
+                                 </span>
+                              </button>
+                           </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end: Portfolio Area -->
+      <!-- SKILLS SECTION START -->
+      <section class="skills-section" id="skills-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="section-header text-center">
+                     <h2 class="section-title wow fadeInUp" data-wow-delay=".3s">My Skills</h2>
+                     <p class="wow fadeInUp" data-wow-delay=".4s">
+                        We put your ideas and thus your wishes in the form of a unique web project that inspires you and
+                        you customers.
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="skills-widget d-flex flex-wrap justify-content-center align-items-center">
+                     <div class="skill-item wow fadeInUp" data-wow-delay=".3s">
+                        <div class="skill-inner">
+                           <div class="icon-box">
+                              <img src="assets/img/logo/html-new.png" alt="" />
+                           </div>
+                           <!-- <div class="number">92%</div> -->
+                        </div>
+                        <p>HTML</p>
+                     </div>
+                     <div class="skill-item wow fadeInUp" data-wow-delay=".4s">
+                        <div class="skill-inner">
+                           <div class="icon-box">
+                              <img src="assets/img/logo/css-logo.png" alt="" />
+                           </div>
+                           <!-- <div class="number">80%</div> -->
+                        </div>
+                        <p>CSS</p>
+                     </div>
+                     <div class="skill-item wow fadeInUp" data-wow-delay=".8s">
+                        <div class="skill-inner">
+                           <div class="icon-box">
+                              <img src="assets/img/icons/js.svg" alt="" />
+                           </div>
+                           <!-- <div class="number">93%</div> -->
+                        </div>
+                        <p>JavaScript</p>
+                     </div>
+                     <div class="skill-item wow fadeInUp" data-wow-delay=".5s">
+                        <div class="skill-inner">
+                           <div class="icon-box">
+                              <img src="assets/img/logo/bootstrap-5-logo-icon.svg" alt="" />
+                           </div>
+                           <!-- <div class="number">85%</div> -->
+                        </div>
+                        <p>Bootstrap</p>
+                     </div>
+                     <div class="skill-item wow fadeInUp" data-wow-delay=".6s">
+                        <div class="skill-inner">
+                           <div class="icon-box">
+                              <img src="assets/img/icons/wp.svg" alt="" />
+                           </div>
+                           <!-- <div class="number">99%</div> -->
+                        </div>
+                        <p>WordPess</p>
+                     </div>
+                     <div class="skill-item wow fadeInUp" data-wow-delay=".7s">
+                        <div class="skill-inner">
+                           <div class="icon-box">
+                              <img src="assets/img/icons/react.svg" alt="" />
+                           </div>
+                           <!-- <div class="number">89%</div> -->
+                        </div>
+                        <p>React JS</p>
+                     </div>
+                     <div class="skill-item wow fadeInUp" data-wow-delay=".7s">
+                        <div class="skill-inner">
+                           <div class="icon-box">
+                              <img src="assets/img/logo/jquery-svgrepo-com.svg" alt="" />
+                           </div>
+                           <!-- <div class="number">89%</div> -->
+                        </div>
+                        <p>Jquery</p>
+                     </div>
+                     <div class="skill-item wow fadeInUp" data-wow-delay=".7s">
+                        <div class="skill-inner">
+                           <div class="icon-box">
+                              <img src="assets/img/logo/canva-logo.png" alt="" />
+                           </div>
+                           <!-- <div class="number">89%</div> -->
+                        </div>
+                        <p>Canva</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- SKILLS SECTION END -->
+
+      <!-- RESUME SECTION START -->
+      <section class="resume-section" id="resume-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="section-header wow fadeInUp" data-wow-delay=".3s">
+                     <h2 class="section-title"><i class="flaticon-recommendation"></i> My Experience</h2>
+                  </div>
+
+                  <div class="resume-widget">
+                     <div class="resume-item wow fadeInLeft" data-wow-delay=".4s">
+                        <div class="time">Aug 2023 - Present</div>
+                        <h3 class="resume-title">Web Designer</h3>
+                        <div class="institute">Cyberframe Infotech Pvt Ltd</div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-md-6">
+                  <div class="section-header wow fadeInUp" data-wow-delay=".4s">
+                     <h2 class="section-title"><i class="flaticon-graduation-cap"></i> My Education</h2>
+                  </div>
+
+                  <div class="resume-widget">
+                     <div class="resume-item wow fadeInRight" data-wow-delay=".5s">
+                        <div class="time">2021 - 2023</div>
+                        <h3 class="resume-title">Masters of Computer Application</h3>
+                        <div class="institute">Guru Nanak Dev Engineering College</div>
+                     </div>
+                     <div class="resume-item wow fadeInRight" data-wow-delay=".6s">
+                        <div class="time">2018 - 2021</div>
+                        <h3 class="resume-title">Bachelor of Computer Application</h3>
+                        <div class="institute">Ludhiana College of Engineering and Technology</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- RESUME SECTION END -->
+
+      <!-- start: Text Area -->
+      <section class="text-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="section-header">
+                     <div class="heading-left">
+                        <p class="wow fadeInUp" data-wow-delay=".3s">Want to start a project?</p>
+                        <h2 id="anim" class="section-title wow fadeInUp" data-wow-delay=".4s">Let’s have a chat</h2>
+                     </div>
+                     <div class="chat-mail wow fadeInRight" data-wow-delay=".5s">
+                        <a class="link" href="mailto:hrsaini396@gmail.com">hrsaini396@gmail.com <i
+                              class="fa-light fa-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end: Text Area -->
+      <!-- BEGIN: Contact Form Success Modal Message -->
+      <div class="modal contact_modal" id="message_sent" tabindex="-1">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <span class="modal-title"><strong>Message Sent Successfully</strong></span>
+                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="fas fa-times"></i></button>
+               </div>
+               <div class="modal-body">
+                  <p>Thank you for contacting us. We will get back to you shortly.<br />Have a great day!</p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- END: Contact Form Success Modal Message -->
+
+      <!-- BEGIN: Contact Form Fail Modal Message -->
+      <div class="modal contact_modal failed" id="message_fail" tabindex="-1">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <span class="modal-title"><strong>Error</strong></span>
+                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="fas fa-times"></i></button>
+               </div>
+               <div class="modal-body">
+                  <p>Oops! Something went wrong, please try again.</p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+    <!-- Black Overlay -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Custom Popup Alert -->
+    <div id="customAlert" class="popup-alert"></div>
+      <!-- END: Contact Form Fail Modal Message End -->
+   </main>
+
+   <!-- FOOTER AREA START -->
+   <footer class="tj-footer-area">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12 text-center">
+               <div class="footer-logo-box">
+                  <a href="#"><img src="assets/img/logo/hrithik-logo.svg" alt="" width="75px;"/></a>
+               </div>
+               <div class="footer-menu">
+                  <!-- <nav> -->
+                     <ul class="ul-reset social-icons">
+                        <li>
+                           <a href="https://www.linkedin.com/in/hrithik-saini-b1b2b320a/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                           <a href="https://github.com/Hrithiksaini2000" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                     </ul>
+                  <!-- </nav> -->
+               </div>
+               <!-- <div class="copy-text">
+                  <p>&copy; 2024 All rights reserved by <a href="#" target="_blank">ThemeJunction</a></p>
+               </div> -->
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- FOOTER AREA END -->
+
+   <!-- JSS here -->
+   <script src="assets/js/jquery.min.js"></script>
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/js/nice-select.min.js"></script>
+   <script src="assets/js/backToTop.js"></script>
+   <script src="assets/js/appear.min.js"></script>
+   <script src="assets/js/wow.min.js"></script>
+   <script src="assets/js/gsap.min.js"></script>
+   <script src="assets/js/ScrollTrigger.min.js"></script>
+   <script src="assets/js/lenis.min.js"></script>
+   <script src="assets/js/lightcase.js"></script>
+   <script src="assets/js/owl.carousel.min.js"></script>
+   <script src="assets/js/swiper.min.js"></script>
+   <script src="assets/js/imagesloaded-pkgd.js"></script>
+   <script src="assets/js/isotope.pkgd.min.js"></script>
+   <script src="assets/js/odometer.min.js"></script>
+   <script src="assets/js/magnific-popup.js"></script>
+   <script src="assets/js/validate.min.js"></script>
+   <script src="assets/js/meanmenu.js"></script>
+   <script src="assets/js/main.js"></script>
+   <script>
+    function showPopup(message) {
+        let popup = document.getElementById("customAlert");
+        let overlay = document.getElementById("overlay");
+
+        popup.innerText = message;
+
+        // Reset display to ensure the popup is shown every time
+        overlay.style.display = "block";
+        popup.style.display = "block";
+        setTimeout(() => {
+            popup.classList.add("show");
+        }, 10);
+
+        setTimeout(() => {
+            popup.classList.remove("show");
+            setTimeout(() => {
+                overlay.style.display = "none";
+                popup.style.display = "none"; // Reset popup visibility
+            }, 300);
+        }, 2000);
+    }
+
+    // Disable right-click and show popup
+    document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+        showPopup("🚫 Right-click is disabled!");
+    });
+
+    // Disable all shortcut keys and show popup
+    document.addEventListener("keydown", function (event) {
+        if (
+            event.ctrlKey && (event.key === "u" || event.key === "U") || // Ctrl + U (View Source)
+            event.ctrlKey && event.shiftKey && (event.key === "I" || event.key === "i") || // Ctrl + Shift + I (Dev Tools)
+            event.ctrlKey && event.shiftKey && (event.key === "J" || event.key === "j") || // Ctrl + Shift + J (Console)
+            event.ctrlKey && (event.key === "S" || event.key === "s") || // Ctrl + S (Save Page)
+            event.ctrlKey && (event.key === "H" || event.key === "h") || // Ctrl + H (History)
+            event.ctrlKey && (event.key === "A" || event.key === "a") || // Ctrl + A (Select All)
+            event.ctrlKey && (event.key === "E" || event.key === "e") || // Ctrl + E (Search)
+            event.ctrlKey && (event.key === "F" || event.key === "f") || // Ctrl + F (Find)
+            event.ctrlKey && (event.key === "P" || event.key === "p") || // Ctrl + P (Print)
+            event.ctrlKey && (event.key === "C" || event.key === "c") || // Ctrl + C (Copy)
+            event.ctrlKey && (event.key === "X" || event.key === "x") || // Ctrl + X (Cut)
+            event.ctrlKey && (event.key === "V" || event.key === "v") || // Ctrl + V (Paste)
+            event.ctrlKey && (event.key === "Y" || event.key === "y") || // Ctrl + Y (Redo)
+            event.ctrlKey && (event.key === "Z" || event.key === "z") || // Ctrl + Z (Undo)
+            event.ctrlKey && event.shiftKey && (event.key === "C" || event.key === "c") || // Ctrl + Shift + C (Inspect)
+            event.ctrlKey && event.shiftKey && (event.key === "K" || event.key === "k") || // Ctrl + Shift + K (Console in Firefox)
+            event.ctrlKey && event.shiftKey && (event.key === "L" || event.key === "l") || // Ctrl + Shift + L (Lock Screen)
+            event.ctrlKey && event.shiftKey && (event.key === "T" || event.key === "t") || // Ctrl + Shift + T (Reopen Closed Tab)
+            event.ctrlKey && event.shiftKey && (event.key === "Delete") || // Ctrl + Shift + Delete (Clear Browsing Data)
+            event.metaKey && (event.key === "S" || event.key === "s") || // Cmd + S (Mac Save)
+            event.metaKey && (event.key === "P" || event.key === "p") || // Cmd + P (Mac Print)
+            event.key === "F12" || // F12 (Dev Tools)
+            event.key === "Escape" // Escape (To close some tools)
+        ) {
+            event.preventDefault();
+            showPopup("⚠️ Keyboard shortcuts are disabled!");
+        }
+    });
+
+    // Detect Developer Tools & Show Popup Alert
+    setInterval(() => {
+        let before = new Date().getTime();
+        debugger;
+        let after = new Date().getTime();
+        if (after - before > 100) {
+            showPopup("⚠️ Developer tools detected!");
+            document.body.innerHTML = ""; // Clear the page
+        }
+    }, 2000);
+</script>
+</body>
+
+</html>
