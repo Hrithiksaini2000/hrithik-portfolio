@@ -76,6 +76,40 @@
          display: block;
          opacity: 1;
       }
+
+/* Make all cols equal height */
+.project-section .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-section .col-lg-5 {
+  display: flex;
+}
+
+.project-content-area {
+  flex: 1; /* Fill equal height */
+  display: flex;
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  flex: 1;
+  gap: 0px;
+}
+
+/* Push "View Live Project" button to bottom */
+.project-left-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-button {
+  margin-top: auto; /* pushes button to bottom */
+}
+
    </style>
    <!-- Preloader Area Start -->
    <div class="preloader">
@@ -599,12 +633,11 @@
                   <div class="project-content-area featured style-2">
                      <div class="project-box">
                         <div class="project-wrapper">
-                           <img src="assets/img/portfolio/project-5.png" alt="Images" />
+                           <img src="assets/img/portfolio/project-2.png" alt="Images" />
                         </div>
                         <div class="project-left-content">
                            <div class="project_content">
-                              <h3 class="title"><button data-mfp-src="#portfolio-wrapper" class="modal-popup">Airport
-                                    Limo Link</button>
+                              <h3 class="title"><button data-mfp-src="#portfolio-wrapper" class="modal-popup">Bulaao</button>
                               </h3>
                               <!-- <p class="desc">
                                  The India Bolts project focused on precision and reliability in the fastener industry.They have extensive range of high-quality bolts, nuts, and fasteners, ensuring seamless navigation and clear product information.
@@ -612,16 +645,8 @@
                               <span class="subtitle">Technologies Used:</span>
                            </div>
                            <ul class="project_tags">
-                              <li><a href="#"><img src="assets/img/logo/html-new.png" alt=""
-                                       class="technlogo-logo">HTML</a></li>
-                              <li><a href="#"><img src="assets/img/logo/css-new.png" alt=""
-                                       class="technlogo-logo">CSS</a></li>
-                              <li><a href="#"><img src="assets/img/logo/js-logo-2.png" alt=""
-                                       class="technlogo-logo">JAVASCRIPT</a></li>
-                              <li><a href="#"><img src="assets/img/logo/jquery-svgrepo-com.svg" alt=""
-                                       class="technlogo-logo">JQUERY</a></li>
-                              <li><a href="#"><img src="assets/img/logo/bootstrap-5-logo-icon.svg" alt=""
-                                       class="technlogo-logo">BOOTSTRAP</a></li>
+                              <li><a href="#"><img src="assets/img/icons/react.svg" alt=""
+                                       class="technlogo-logo">React JS</a></li>
                            </ul>
                            <div class="project-button">
                               <a href="https://demo6.cyberframe.in/airport-limo-link-new/" target="_blank">
@@ -975,6 +1000,10 @@
             document.body.innerHTML = ""; // Clear the page
          }
       }, 2000);
+
+
+
+      
    </script>
 </body>
 
