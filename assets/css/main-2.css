@@ -303,7 +303,7 @@
 	border: none;
 	padding: 0;
 	margin: 0;
-	font-size: inherit;
+	font-size: 25px;
 	font-weight: inherit;
 	color: inherit;
 	transition: all 0.3s ease-in-out 0s;
