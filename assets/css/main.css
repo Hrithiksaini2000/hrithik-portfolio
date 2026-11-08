@@ -2229,6 +2229,7 @@ body.loaded {
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
 	transition: 0.3s;
+	height: 60px;
 }
 
 .skills-widget .skill-item:hover .icon-box img {
@@ -3817,6 +3818,7 @@ body.absolute_header .breadcrumb_area {
 .technlogo-logo{
 	width: 30px;
     margin-right: 10px;
+	height: 30px;
 }
 
 .heading-margin{
